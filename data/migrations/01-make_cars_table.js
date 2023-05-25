@@ -8,11 +8,11 @@ return knex.schema.createTable('cars', tbl =>{
 
   tbl.string('model', 128).notNullable()
 
-  tbl.numeric('mileage').unsigned().notNullable()
+  tbl.integer('mileage').unsigned().notNullable()
   
   tbl.string('title', 128)
 
-  tbl.string('transimission', 128)
+  tbl.string('transmission', 128)
 })
 };
 
