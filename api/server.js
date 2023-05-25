@@ -6,7 +6,7 @@ server.use(express.json())
 
 server.use('*',(req,res,next)=>{
     next({
-        status:404, message:'not found'
+        status:404, message:'not found!'
     })
 })
 
